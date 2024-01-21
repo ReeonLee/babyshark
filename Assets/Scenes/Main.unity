@@ -1548,6 +1548,7 @@ GameObject:
   - component: {fileID: 597887558}
   - component: {fileID: 597887557}
   - component: {fileID: 597887559}
+  - component: {fileID: 597887560}
   m_Layer: 0
   m_Name: Start
   m_TagString: Untagged
@@ -1580,9 +1581,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 597887558}
+  - {fileID: 597887508}
   selectedCommands:
-  - {fileID: 597887557}
+  - {fileID: 597887560}
   variables:
   - {fileID: 597887535}
   description: 
@@ -1610,7 +1611,7 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 67.87718
-    y: 70
+    y: 71
     width: 75
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -1625,6 +1626,7 @@ MonoBehaviour:
   - {fileID: 597887528}
   - {fileID: 597887526}
   - {fileID: 597887556}
+  - {fileID: 597887560}
   - {fileID: 597887555}
   - {fileID: 597887559}
   suppressAllAutoSelections: 0
@@ -1849,7 +1851,7 @@ MonoBehaviour:
   portrait: {fileID: 21300000, guid: 3a53752da1b64124ebf5c52d8877e649, type: 3}
   offset: 0
   fromPosition: {fileID: 0}
-  toPosition: {fileID: 1936796461}
+  toPosition: {fileID: 984030928}
   facing: 0
   useDefaultSettings: 1
   fadeDuration: 0.5
@@ -1906,6 +1908,36 @@ MonoBehaviour:
     stringVal: 
   startIndex: 0
   callMode: 0
+--- !u!114 &597887560
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 597887505}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ac5ce55bc698fa4290939ef6e426501, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 55
+  indentLevel: 0
+  display: 1
+  stage: {fileID: 0}
+  character: {fileID: 1113821366}
+  replacedCharacter: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 2b390c9198f60ef4f8f4401a9ec34b03, type: 3}
+  offset: 0
+  fromPosition: {fileID: 0}
+  toPosition: {fileID: 1769834709}
+  facing: 0
+  useDefaultSettings: 0
+  fadeDuration: 0
+  moveDuration: 1
+  shiftOffset: {x: 0, y: 0}
+  move: 0
+  shiftIntoPlace: 0
+  waitUntilFinished: 0
 --- !u!1 &598872281
 GameObject:
   m_ObjectHideFlags: 0
