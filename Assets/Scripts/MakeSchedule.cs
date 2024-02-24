@@ -2,6 +2,7 @@ using Fungus;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using Fungus;
 
 public class MakeSchedule : MonoBehaviour
@@ -10,6 +11,13 @@ public class MakeSchedule : MonoBehaviour
     public RectTransform[] selectedslots;
     public UnityEngine.UI.Button startButton;
     public Flowchart flowChart;
+
+
+    public UnityEngine.UI.Text BasketValue;
+    public UnityEngine.UI.Text StudyValue;
+    public UnityEngine.UI.Text CharmValue;
+    public UnityEngine.UI.Text StressValue;
+    public UnityEngine.UI.Text Date;
 
 
     private ScheduleButton[] schedulebuttons_selected;
@@ -34,6 +42,15 @@ public class MakeSchedule : MonoBehaviour
     void Update()
     {
 
+    }
+
+    private void OnEnable()
+    {
+        BasketValue.text = "농구력 : " + flowChart.GetVariable("농구력").GetValue();
+        StudyValue.text = "지력 : " + flowChart.GetVariable("지력").GetValue();
+        CharmValue.text = "매력 : " + flowChart.GetVariable("매력").GetValue();
+        StressValue.text = "스트레스 : " + flowChart.GetVariable("스트레스").GetValue();
+        Date.text = flowChart.GetVariable("날짜").GetValue() + "월";
     }
 
     public void Close()

@@ -15,12 +15,13 @@ public class Title : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
     }
+    
 
     public void onClickNewGame()
     {
         Debug.Log("NewGame");
+        SaveDataLoader.saveSlotNumber = 0;
         UnityEngine.SceneManagement.SceneManager.LoadScene("Intro");
     }
 
@@ -38,5 +39,10 @@ public class Title : MonoBehaviour
     {
         Debug.Log("GameQuit");
         Application.Quit();
+    }
+
+    public void onClickReset()
+    {
+        PlayerPrefs.DeleteAll();
     }
 }
