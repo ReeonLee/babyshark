@@ -20,7 +20,7 @@ public class Skip : MonoBehaviour
             flowChart.ExecuteBlock("Main");
         }
 
-        else if (ExecutingBlock.BlockName == "Event_Sick")
+        else if (ExecutingBlock.BlockName == "Event_Sick_Intro")
         {
             flowChart.StopAllBlocks();
             flowChart.ExecuteBlock("Hide All");
