@@ -41,6 +41,13 @@ public class Skip : MonoBehaviour
             flowChart.ExecuteBlock("Main");
         }
 
+        else if (ExecutingBlock.BlockName == "Event_Home")
+        {
+            flowChart.StopAllBlocks();
+            flowChart.ExecuteBlock("Hide All");
+            flowChart.ExecuteBlock("Main");
+        }
+
         else if (ExecutingBlock.BlockName == "EndingText")
         {
             flowChart.StopAllBlocks();
@@ -83,6 +90,21 @@ public class Skip : MonoBehaviour
             PlayerPrefs.SetInt("unlockEnding" + 4, 1);
             UnityEngine.SceneManagement.SceneManager.LoadScene("Title");
         }
+
+        else if (ExecutingBlock.BlockName == "Ending5")
+        {
+            flowChart.StopAllBlocks();
+            PlayerPrefs.SetInt("unlockEnding" + 5, 1);
+            UnityEngine.SceneManagement.SceneManager.LoadScene("Title");
+        }
+
+        else if (ExecutingBlock.BlockName == "Ending6")
+        {
+            flowChart.StopAllBlocks();
+            PlayerPrefs.SetInt("unlockEnding" + 6, 1);
+            UnityEngine.SceneManagement.SceneManager.LoadScene("Title");
+        }
+
 
     }
 }

@@ -6,6 +6,7 @@ public class SaveData : MonoBehaviour
 {
     public int saveSlotNumber;
     public SaveAgain saveAgain;
+    public GameObject saveConfirm;
 
 
     public void onClick()
@@ -22,6 +23,7 @@ public class SaveData : MonoBehaviour
 
 
         Fungus.FungusManager.Instance.SaveManager.Save("SaveData" + saveSlotNumber);
+        saveConfirm.SetActive(true);
     }
 
 
