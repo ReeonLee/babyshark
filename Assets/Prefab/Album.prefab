@@ -1381,6 +1381,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5631030653697219686}
     m_Modifications:
+    - target: {fileID: 591861246370482188, guid: 14ae3b50384baa743a16eade59d9dc87, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 400
+      objectReference: {fileID: 0}
     - target: {fileID: 1370848705669824634, guid: 14ae3b50384baa743a16eade59d9dc87, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 1
@@ -1413,6 +1417,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 1578255153832393955, guid: 14ae3b50384baa743a16eade59d9dc87, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 400
+      objectReference: {fileID: 0}
     - target: {fileID: 4498968627594293392, guid: 14ae3b50384baa743a16eade59d9dc87, type: 3}
       propertyPath: m_Name
       value: AlbumSlot (5)
@@ -1420,7 +1428,7 @@ PrefabInstance:
     - target: {fileID: 5757917658293105809, guid: 14ae3b50384baa743a16eade59d9dc87, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: f3c937a109a402d43bef592b1a9888d8, type: 3}
+      objectReference: {fileID: 21300000, guid: b16c9c5d44f465f48813a85df73f9f0f, type: 3}
     - target: {fileID: 7161600406611473354, guid: 14ae3b50384baa743a16eade59d9dc87, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1504,7 +1512,7 @@ PrefabInstance:
     - target: {fileID: 8125274002597807786, guid: 14ae3b50384baa743a16eade59d9dc87, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: fb8da837d67a7b8428decd1ae5782cee, type: 3}
+      objectReference: {fileID: 21300000, guid: a15364bdf6470b64c98389bba5626d8b, type: 3}
     - target: {fileID: 8716508298872847072, guid: 14ae3b50384baa743a16eade59d9dc87, type: 3}
       propertyPath: endingNumber
       value: 5
