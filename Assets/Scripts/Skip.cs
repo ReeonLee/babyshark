@@ -31,21 +31,21 @@ public class Skip : MonoBehaviour
         {
             flowChart.StopAllBlocks();
             flowChart.ExecuteBlock("Hide All");
-            flowChart.ExecuteBlock("Main");
+            flowChart.ExecuteBlock("CheckMonth");
         }
 
         else if (ExecutingBlock.BlockName == "Event_HangOut")
         {
             flowChart.StopAllBlocks();
             flowChart.ExecuteBlock("Hide All");
-            flowChart.ExecuteBlock("Main");
+            flowChart.ExecuteBlock("CheckMonth");
         }
 
         else if (ExecutingBlock.BlockName == "Event_Home")
         {
             flowChart.StopAllBlocks();
             flowChart.ExecuteBlock("Hide All");
-            flowChart.ExecuteBlock("Main");
+            flowChart.ExecuteBlock("CheckMonth");
         }
 
         else if (ExecutingBlock.BlockName == "EndingText")
